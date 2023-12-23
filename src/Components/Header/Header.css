@@ -1,0 +1,95 @@
+#header {
+  background-color: white;
+  display: flex;
+  padding: 15px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-items ul {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.menu-items ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu-items ul li a:hover {
+  color: #2164c0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.desktop-button {
+  padding: 10px 15px;
+  background-color: #2164c0;
+  border: none;
+  transition: 0.3s;
+}
+
+.desktop-button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.desktop-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.mobile-menu-icons {
+  display: none;
+}
+
+@media screen and (max-width: 1136px) {
+  #header {
+    padding: 6px 15px;
+    align-items: center;
+  }
+
+  .desktop-button {
+    display: none;
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .mobile-menu-items ul {
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 0;
+    top: 65px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu-items ul li {
+    padding: 10px 0;
+  }
+
+  .mobile-menu-items ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-menu-icons {
+    display: block;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+}
