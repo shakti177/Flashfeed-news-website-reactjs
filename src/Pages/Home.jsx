@@ -1,10 +1,22 @@
-import React from "react";
-import Header from "../Components/Header/Header";
+import React, { useEffect, useState } from "react";
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(()=>{
+    const fetchData = async () =>{
+      try{
+        const url = ""
+      }
+      catch{
+        
+      }
+    }
+  })
+
   return (
     <section>
-      <Header />
+      <h1>Hello</h1>
     </section>
   );
 };
