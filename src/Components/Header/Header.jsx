@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import "./Header.css";
 import logo from "../../Assets/logo.png";
 import { IoMenu, IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenuItemClick = () => {
+    if (window.innerWidth <= 1136) {
+      setShowMenu(false);
+    }
+  };
 
   return (
     <section id="header">
@@ -14,19 +21,34 @@ const Header = () => {
       <div className={showMenu ? "mobile-menu-items" : "menu-items"}>
         <ul>
           <li>
-            <a href="/home">Home</a>
+            <Link to="/" onClick={handleMenuItemClick}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/home">Entertainment</a>
+            <Link to="/breakingNews" onClick={handleMenuItemClick}>
+              Breaking News
+            </Link>
           </li>
           <li>
-            <a href="/home">Sports</a>
+            <Link to="/sports" onClick={handleMenuItemClick}>
+              Sports
+            </Link>
           </li>
           <li>
-            <a href="/home">World</a>
+            <Link to="/entertainment" onClick={handleMenuItemClick}>
+              Entertainment
+            </Link>
           </li>
           <li>
-            <a href="/home">Technology</a>
+            <Link to="/technology" onClick={handleMenuItemClick}>
+              Technology
+            </Link>
+          </li>
+          <li>
+            <Link to="/world" onClick={handleMenuItemClick}>
+              World
+            </Link>
           </li>
         </ul>
       </div>

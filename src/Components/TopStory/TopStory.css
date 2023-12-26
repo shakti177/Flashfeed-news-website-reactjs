@@ -25,11 +25,12 @@
   align-items: flex-end;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  height: 245px;
 }
 
 .BoxContent {
-  padding-left: 15px;
+  padding: 10px 15px;
 }
 
 .topStory_category {
@@ -37,11 +38,12 @@
 }
 
 .topStory_category div {
-  padding: 2px 10px;
+  padding: 3px 10px;
   background-color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   color: white;
   font-weight: 700;
+  font-size: 15px;
 }
 
 /* .topStory_title {
@@ -51,6 +53,13 @@
 .topStory_title h2 {
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.topStory_title h2 a{
+  text-decoration: none;
+  color: white;
 }
 
 /* .topStory_date {
@@ -70,14 +79,39 @@
     padding: 0px;
   }
 
+  .BoxContent {
+    padding: 5px 10px;
+  }
+
   .bigBox {
     height: 250px;
   }
 
+  .smallBox {
+    height: 150px;
+  }
+
   .topStory_title h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 17px;
+    line-height: 25px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 300px;
+  }
+
+  .topStory_category div {
+    padding: 2px 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .topStory_date p {
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
   }
 }

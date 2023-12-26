@@ -21,13 +21,15 @@ const TopStory = ({ newsData }) => {
                 newsItems.image_url ? newsItems.image_url : flashfeed
               })`,
             }}
-          > 
+          >
             <div className="BoxContent">
               <div className="topStory_category">
                 <div>{newsItems.category}</div>
               </div>
               <div className="topStory_title">
-                <h2>{newsItems.title}</h2>
+                <h2>
+                  <a href={newsItems.link}> {newsItems.title}</a>
+                </h2>
               </div>
               <div className="topStory_date">
                 <p>{newsItems.pubDate}</p>
@@ -52,7 +54,9 @@ const TopStory = ({ newsData }) => {
                 <div>{newsItems.category}</div>
               </div>
               <div className="topStory_title">
-                <h2>{newsItems.title}</h2>
+                <h2>
+                  <a href={newsItems.link}> {newsItems.title}</a>
+                </h2>
               </div>
               <div className="topStory_date">
                 <p>{newsItems.pubDate}</p>
