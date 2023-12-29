@@ -1,16 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import Loader from "../Loader/Loader";
 import "./Posts.css";
+import flashfeed from "../../Assets/flashfeed.jpg";
 
 const Posts = ({ newsData, loadMoreNews }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLoadMore = async () => {
+    setIsLoading(true);
+    await loadMoreNews();
+    setIsLoading(false);
+  };
+
   return (
     <div>
-      {newsData.map((data, index) => (
-        <div key={index}>
-          <h3>{data.title}</h3>
-          <p style={{ color: "red" }}>{data.category}</p>
-        </div>
-      ))}
-      <button onClick={loadMoreNews}>Load More</button>
+      <div className="postMainContainer">
+        {newsData.map((data, index) => (
+          <div key={index} className="postContainer">
+            <div>
+              <div className="post_image_container">
+                <img src={data.image_url ? data.image_url : flashfeed} alt="" />
+              </div>
+              <h2>{data.title}</h2>
+              <h5>{data.pubDate.split(" ")[0]}</h5>
+
+              <p>
+                {data.description
+                  ? data.description
+                  : "Description is not Available for this News"}
+              </p>
+            </div>
+            <div class="options">
+              <h4 style={{ color: "red" }}>{data.category}</h4>
+              <span>
+                <a href={data.link}>Read More</a>
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+      <button onClick={handleLoadMore}>
+        {isLoading ? <Loader /> : "Load More"}
+      </button>
     </div>
   );
 };

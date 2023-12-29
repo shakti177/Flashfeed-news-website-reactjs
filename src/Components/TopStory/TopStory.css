@@ -31,6 +31,9 @@
 
 .BoxContent {
   padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .topStory_category {
@@ -55,6 +58,7 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: 20px;
   line-height: 28px;
+  font-weight: 600;
 }
 
 .topStory_title h2 a{
@@ -67,8 +71,9 @@
 } */
 
 .topStory_date p {
-  font-weight: 700;
+  font-weight: 400;
   color: white;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1136px) {
@@ -113,5 +118,6 @@
     font-weight: 700;
     color: white;
     font-size: 12px;
+    padding-bottom: 5px;
   }
 }

@@ -9,6 +9,7 @@ import Entertainment from "./Pages/Entertainment";
 import Technology from "./Pages/Technology";
 import Sports from "./Pages/Sports";
 import Business from "./Pages/Business";
+import "./App.css";
 
 const App = () => {
   const [newsData, setNewsData] = useState([]);
