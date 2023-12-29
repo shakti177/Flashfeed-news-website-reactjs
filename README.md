@@ -1,4 +1,4 @@
-Live Website - flashfeed-news-website.netlify.app
+Live Website - [flashfeed](https://flashfeed-news-website.netlify.app/)
 
 
 # Getting Started with Create React App
