@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Loader from "../Loader/Loader";
 import "./Posts.css";
 import flashfeed from "../../Assets/flashfeed.jpg";
 
@@ -39,9 +38,11 @@ const Posts = ({ newsData, loadMoreNews }) => {
           </div>
         ))}
       </div>
-      <button onClick={handleLoadMore}>
-        {isLoading ? <Loader /> : "Load More"}
-      </button>
+      <div className="postButtonContainer">
+        <button onClick={handleLoadMore} className="postButton">
+          {isLoading ? <div className="loading"></div> : "Load More"}
+        </button>
+      </div>
     </div>
   );
 };

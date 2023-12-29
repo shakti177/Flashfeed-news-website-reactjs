@@ -1,9 +1,12 @@
 import React from "react";
-import "./Loader.css"
+import "./Loader.css";
 
 const Loader = () => {
-  return <div className="spinner"></div>;
-  
+  return (
+    <div className="spinnerContainer">
+      <div className="spinner"></div>
+    </div>
+  );
 };
 
 export default Loader;

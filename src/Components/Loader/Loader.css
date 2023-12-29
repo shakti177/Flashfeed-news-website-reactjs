@@ -1,3 +1,10 @@
+.spinnerContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 280px;
+}
+
 .spinner {
   width: 56px;
   height: 56px;
@@ -26,5 +33,11 @@
 @keyframes spinner-a4dj62 {
   100% {
     transform: rotate(1turn);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .spinnerContainer {
+    margin-top: 250px;
   }
 }

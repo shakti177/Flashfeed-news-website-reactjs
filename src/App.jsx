@@ -18,7 +18,7 @@ const App = () => {
 
   const fetchData = async (pageID = null) => {
     try {
-      let url = `https://newsdata.io/api/1/news?apikey=pub_33625bf9d8fce768253c2a6d9a150de7a3252&language=en&country=in&prioritydomain=top`;
+      let url = `https://newsdata.io/api/1/news?apikey=pub_342405caad2a216ccef37ce49c5757f947f93&language=en&country=in&prioritydomain=top`;
 
       if (pageID) {
         url += `&page=${pageID}`;
