@@ -4,6 +4,7 @@ import Posts from "../Components/Posts/Posts";
 import TopStory from "../Components/TopStory/TopStory";
 
 const Home = ({ newsData, isLoading, loadMoreNews }) => {
+  console.log(newsData);
   return (
     <section>
       <TopStory newsData={newsData} />

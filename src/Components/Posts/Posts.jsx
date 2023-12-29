@@ -3,6 +3,7 @@ import "./Posts.css";
 import flashfeed from "../../Assets/flashfeed.jpg";
 
 const Posts = ({ newsData, loadMoreNews }) => {
+  // console.log(newsData);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleLoadMore = async () => {
