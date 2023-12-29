@@ -1,0 +1,89 @@
+#footer {
+  padding: 30px 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footerMainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  gap: 10px;
+  justify-items: center;
+  align-items: start;
+}
+
+.footer_col {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer_col_items ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_col_items li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_col_github {
+  width: 260px;
+  height: 80px;
+}
+
+.footer_col_github img {
+  height: 100%;
+  width: 100%;
+}
+
+.copyright_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.copyright_section a {
+  color: white;
+}
+
+@media screen and (max-width: 1136px) {
+  #footer {
+    padding: 30px 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerMainContainer {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: normal;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #footer {
+    gap: 20px;
+  }
+  .footerMainContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer_col_github {
+    width: 160px;
+    height: 50px;
+  }
+
+  .copyright_section {
+    font-size: 14px;
+  }
+}

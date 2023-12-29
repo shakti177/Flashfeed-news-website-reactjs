@@ -16,7 +16,9 @@ const Header = () => {
   return (
     <section id="header">
       <div className="logo">
-        <img src={logo} alt="" />
+        <Link to="/">
+          <img src={logo} alt="" />
+        </Link>
       </div>
       <div className={showMenu ? "mobile-menu-items" : "menu-items"}>
         <ul>
