@@ -74,6 +74,11 @@ const Footer = () => {
                   World
                 </Link>
               </li>
+              <li>
+                <Link to="/business" onClick={scrollToTop}>
+                  Business
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

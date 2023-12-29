@@ -52,6 +52,11 @@ const Header = () => {
               World
             </Link>
           </li>
+          <li>
+            <Link to="/business" onClick={handleMenuItemClick}>
+              Business
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="headerButton">

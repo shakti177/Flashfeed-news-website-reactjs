@@ -4,7 +4,7 @@ import Posts from "../Components/Posts/Posts";
 
 const Business = ({ newsData, isLoading, loadMoreNews }) => {
   const CategoryItems = Array.isArray(newsData)
-    ? newsData.filter((item) => item.category.includes("entertainment"))
+    ? newsData.filter((item) => item.category.includes("business"))
     : [];
   return (
     <section>
