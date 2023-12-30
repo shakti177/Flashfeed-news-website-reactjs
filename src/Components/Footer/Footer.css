@@ -32,6 +32,12 @@
 .footer_col_items li a {
   text-decoration: none;
   color: white;
+  transition: 0.3s;
+}
+
+.footer_col_items li a:hover {
+  color: rgb(139, 139, 139);
+  transition: 0.3s;
 }
 
 .footer_col_github {
@@ -53,8 +59,14 @@
   text-align: center;
 }
 
-.copyright_section a {
+.copyright_section p a {
   color: white;
+  transition: 0.3s;
+}
+
+.copyright_section p a:hover {
+  color: rgb(139, 139, 139);
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1136px) {
