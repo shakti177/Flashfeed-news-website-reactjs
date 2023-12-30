@@ -8,6 +8,11 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleMenuItemClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
     if (window.innerWidth <= 1136) {
       setShowMenu(false);
     }
