@@ -54,6 +54,7 @@
 .desktop-button:hover {
   transform: scale(1.1);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .mobile-menu-icons {
