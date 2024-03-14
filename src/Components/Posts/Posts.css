@@ -18,7 +18,7 @@
 }
 
 .post_image_container {
-  width: 350px;
+  width: 360px;
   height: 220px;
 }
 
@@ -65,6 +65,12 @@
   font-weight: 600;
   color: #22215b;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.options span a:hover {
+  color: #2164c0;
+  transition: 0.3s;
 }
 
 .postContainer h4 {
@@ -86,6 +92,7 @@
   padding: 10px 15px;
   background-color: #2164c0;
   border: none;
+  border-radius: 7px;
   transition: 0.3s;
   color: white;
   text-decoration: none;

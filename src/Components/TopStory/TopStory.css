@@ -61,9 +61,14 @@
   font-weight: 600;
 }
 
-.topStory_title h2 a{
+.topStory_title h2 a {
   text-decoration: none;
   color: white;
+}
+
+.topStory_title h2 a:hover {
+  color: rgb(220, 220, 220);
+  transition: 0.3s;
 }
 
 /* .topStory_date {

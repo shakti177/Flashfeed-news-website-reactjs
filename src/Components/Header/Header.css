@@ -43,6 +43,7 @@
   background-color: #2164c0;
   border: none;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .desktop-button a {
