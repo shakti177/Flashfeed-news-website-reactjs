@@ -88,7 +88,7 @@ const Footer = () => {
         <div className="footer_col">
           <h3>Download FlashFeed App</h3>
           <div className="footer_col_github">
-            <a href="https://github.com/shakti177/FlashFeed-News-App-React_Native/releases/download/untagged-4c16cd6f11117e7aaafa/app-release.apk">
+            <a href="https://github.com/shakti177/FlashFeed-News-App-React_Native/releases/download/FlashFeed/Flashfeed.apk">
               <img src={appdownload} alt="" />
             </a>
           </div>
