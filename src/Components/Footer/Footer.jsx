@@ -12,6 +12,8 @@ const Footer = () => {
     });
   };
 
+  const getCurrentYear = () => new Date().getFullYear();
+
   return (
     <section id="footer">
       <div className="footerMainContainer">
@@ -96,7 +98,8 @@ const Footer = () => {
       </div>
       <div className="copyright_section">
         <p>
-          Copyright&copy; 2024 All rights reserved | Design by&nbsp;
+          Copyright&copy; {getCurrentYear()} All rights reserved | Design
+          by&nbsp;
           <a href="https://github.com/shakti177/">Shakti Tamrakar</a>&nbsp;with
           ❤️
         </p>
