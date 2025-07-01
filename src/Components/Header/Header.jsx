@@ -65,12 +65,9 @@ const Header = () => {
         </ul>
       </div>
       <div className="headerButton">
-        <button className="desktop-button">
-          <a href="https://github.com/shakti177/FlashFeed-News-App-React_Native/releases/download/untagged-4c16cd6f11117e7aaafa/app-release.apk">
-            Download App
-          </a>{" "}
-        </button>
-
+        <a href="https://github.com/shakti177/FlashFeed-News-App-React_Native/releases/download/untagged-4c16cd6f11117e7aaafa/app-release.apk">
+          <button className="desktop-button">Download App</button>
+        </a>
         <button
           className="mobile-menu-icons"
           onClick={() => setShowMenu(!showMenu)}

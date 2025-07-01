@@ -44,11 +44,7 @@
   border: none;
   transition: 0.3s;
   border-radius: 10px;
-}
-
-.desktop-button a {
   color: white;
-  text-decoration: none;
   font-weight: 600;
 }
 
